@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/rgb.h>
 
 / {
         keymap {
@@ -16,26 +17,27 @@
 // -----------------------------------------------------------------------------------------
 // |  ESC |  Q  |  W  |   E  |  R  |  T  |   |  n/a  |  Y   |  U  |  n/a  |  I  | BKSP |
 // |  TAB |  A  |  S  |   D  |  F  |  G  |   |  n/a  |  H   |  J  |   K   |  ;  |  '   |
-// | SHFT |  Z  |  X  |   C  |  V  |  B  |   |   L   |  N   |  M   |  O  |   P   |  /  |
+// | SHFT |  Z  |  X  |   C  |  V  |  B  |   |   L   |  N   |  M   |  O  |   P  | LWR  |
 //                    | CTRL | GUI | SPC |   |  ENT  |  ,   |  .  |
                         bindings = <
-   &kp ESC   &kp Q &kp W &kp E &kp R &kp T   &kp N1 &kp Y  &kp U  &kp N2  &kp I    &kp BSPC
-   &kp TAB   &kp A &kp S &kp D &kp F &kp G   &kp N3 &kp H  &kp J  &kp K   &kp SEMI &kp SQT
-   &kp LSHFT &mt Z N1 &mt X N2 &mt C N3 &mt V N4 &mt B N5   &mt L N6  &mt N N7  &mt M N8  &mt O N9   &mt P N0    &kp FSLH 
+   &kp ESC   &kp Q &kp W &kp E &kp R &kp T   &trans &kp Y  &kp U  &trans  &kp I    &kp BSPC
+   &kp TAB   &kp A &kp S &kp D &kp F &kp G   &trans &kp H  &kp J  &kp K   &kp SEMI &kp SQT
+   &kp LSHFT &mt N1 Z &mt N2 X &mt N3 C &mt N4 V &mt N5 B  &mt N6 L &mt N7 N &mt N8 M  &mt N9 O  &mt N0 P   &mo 1
               &kp LCTRL &kp LGUI &kp SPACE   &kp RET &kp COMMA &kp DOT
                         >;
                 };
+
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-// | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+// |  `   |  !  |  @  |  #  |  $  |  %  |   |     |  &  |  *  |     |  (  |  )   |
+// |  ~   | BT1 | BT2 | BT3 | BT4 | BT5 |   |     | LFT | DWN |  UP | RGT |  "|" |
+// |  -   |  +  |  r  |  g  |  b  |  r  |   |  _  |  =  |  {  |  }  |  [  |   ]  |
+//                    | GUI |     | SPC |   | ENT |  LT |  GT |
                         bindings = <
-   &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
-   &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
-                          	        &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
+   &kp GRAVE  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT     &trans &kp AMPS  &kp KP_MULTIPLY  &trans   &kp LPAR &kp RPAR
+   &kp TILDE  &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4      &trans   &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp PIPE
+   &kp MINUS  &kp PLUS  &rgb_ug RGB_TOG &rgb_ug RGB_EFF &rgb_ug RGB_BRI &rgb_ug RGB_BRD         &kp UNDER   &kp EQUAL   &kp LBRC  &kp RBRC  &kp LBKT  &kp RBKT
+                                              &kp LGUI        &trans          &kp SPACE         &kp RET  &kp LT   &kp GT
                         >;
                 };
 
