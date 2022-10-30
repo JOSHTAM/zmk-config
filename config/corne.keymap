@@ -23,8 +23,8 @@
 //                    | CTRL | GUI | SPC |   |  ENT  |  ,   |  .  |
                         bindings = <
    &kp ESC   &kp Q &kp W &kp E &kp R &kp T   &trans &kp Y  &kp U  &trans  &kp I    &kp BSPC
-   &kp TAB   &kp A &kp S &kp D &kp F &kp G   &trans &kp H  &kp J  &kp K   &kp SEMI &kp SQT
-   &kp LSHFT &mt N1 Z &mt N2 X &mt N3 C &mt N4 V &mt N5 B  &mt N6 L &mt N7 N &mt N8 M  &mt N9 O  &mt N0 P   &mo 1
+   &kp TAB   &kp A &kp S &kp D &kp F &kp G   &trans &kp H  &kp J  &kp K   &kp SEMI &mo 2
+   &kp LSHFT &mt N1 Z &mt N2 X &mt N3 C &mt N4 V &mt N5 B  &mt N6 L &mt N7 N &mt N8 M  &mt N9 O  &mt N0 P  &mo 1
               &kp LCTRL &kp LGUI &kp SPACE   &kp RET &kp COMMA &kp DOT
                         >;
                 };
