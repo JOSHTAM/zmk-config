@@ -19,7 +19,7 @@
 // -----------------------------------------------------------------------------------------
 // |  ESC |  Q  |  W  |   E  |  R  |  T  |   |   Y   |  U   |  I   |  O   |   P  | BKSP |
 // |  TAB |  A  |  S  |   D  |  F  |  G  |   |   H   |  J   |  K   |  L   |   ;  | UPR  |
-// | SHFT |  Z  |  X  |   C  |  V  |  B  |   |   N   |  M   |  n/a |  n/a |  n/a | LWR  |
+// | SHFT |  Z  |  X  |   C  |  V  |  B  |   |   N   |  M   |      |      |      | LWR  |
 //                    | CTRL | GUI | SPC |   |  ENT  |  ,   |  .   |
                         bindings = <
    &kp ESC   &kp Q &kp W &kp E &kp R &kp T   &trans &kp Y  &kp U  &trans  &kp I    &kp BSPC
@@ -46,7 +46,7 @@
                 raise_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-// | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |      |
+// | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |     |
 // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  |  ~  |      |
 //                    | BTC | BTN | BLE |   | TOG |     | ALT |
                         bindings = <
