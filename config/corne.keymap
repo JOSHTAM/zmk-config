@@ -51,7 +51,7 @@
 //                    | BTC | BTN | BLE |   | TOG |     | ALT |
                         bindings = <
    &kp TAB   &kp EXCL &kp AT &kp HASH   &kp DLLR   &kp PRCNT      &trans        &kp AMPS  &kp KP_MULTIPLY &trans   &trans    &kp BSPC
-   &kp LCTRL &kp N1   &kp N2 &kp N3     &kp N4     &kp N5         &trans        &kp EQUAL &kp LBKT        &kp RBKT &QMARK    &trans
+   &kp LCTRL &kp N1   &kp N2 &kp N3     &kp N4     &kp N5         &trans        &kp EQUAL &kp LBKT        &kp RBKT &kp QMARK    &trans
    &kp LSHFT &kp N6   &kp N7 &kp N8     &kp N9     &kp N0         &kp UNDER     &kp PLUS  &kp LBRC        &kp RBRC &kp TILDE &trans
                              &bt BT_CLR &bt BT_NXT &out OUT_BLE   &out OUT_TOG  &trans    &kp RALT
                         >;
